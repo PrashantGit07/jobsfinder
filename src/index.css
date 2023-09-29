@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this CSS in your project's stylesheet or CSS file */
+
+.menu-items {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.menu-items.show {
+    transform: translateX(0);
+}
+
+:root {
+   
+    --text-color: #ffffff;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+   
+    background-color:rgb(40, 37, 37);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+  }
