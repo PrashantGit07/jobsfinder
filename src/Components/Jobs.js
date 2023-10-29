@@ -22,7 +22,7 @@ const Jobs = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = 'https://jsearch.p.rapidapi.com/search?query=india&page=4&num_pages=4'; // Removed extra %20
+      const url = 'https://jsearch.p.rapidapi.com/search?query=india&page=4&num_pages=15'; // Removed extra %20
       const options = {
         method: 'GET',
         headers: {

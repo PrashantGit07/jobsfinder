@@ -3,7 +3,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CheckOutlined } from '@ant-design/icons'
 import Footer from './Footer'
-
+import professionalmage from '../assets/Working professionals.jpg'
 const Home = () => {
 
   const navigate = useNavigate()
@@ -41,12 +41,13 @@ const Home = () => {
           </div >
           <div className='mt-5 flex justify-center'>
             <Button className=' bg-blue-600 flex text-white flex-col flex-wrap ml-4 h-16 w-32 items-center justify-center' onClick={clickHandler}>View Jobs</Button>
-           
+
           </div>
         </div>
 
         <div className='mt-3'>
-          <img src='https://10web-site.ai/40/wp-content/uploads/sites/43/2023/09/georgie-cobbs-bKjHgo_Lbpo-unsplash_qMnZYXmj.webp' className=' rounded-lg' alt='searchjob' />
+          {/* <img src='https://10web-site.ai/40/wp-content/uploads/sites/43/2023/09/georgie-cobbs-bKjHgo_Lbpo-unsplash_qMnZYXmj.webp' className=' rounded-lg' alt='searchjob' /> */}
+          <img src={professionalmage} className=' rounded-lg max-h-96' alt='searchjob' />
 
         </div>
 
@@ -125,9 +126,9 @@ const Home = () => {
           </div>
         </div>
 
-        
+
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { Button, Card, Typography } from 'antd';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-
+import comapnyImage from '../assets/Company.jpg'
 const JobDetail = () => {
     const location = useLocation();
     const { resultdata } = location.state;
@@ -24,7 +24,9 @@ const JobDetail = () => {
                 <p className=' font-semibold text-blue-800'> {resultdata.employer_name} </p>
 
 
-                <img src={resultdata.employer_logo} className=' h-[60px] w-[60px]' />
+                {/* <img src={resultdata.employer_logo} className=' h-[60px] w-[60px]' /> */}
+                <img src={resultdata.employer_logo || comapnyImage} className='h-[60px] w-[60px]' alt='Company Logo' />
+
 
                 </div>
                 <p className=' font-semibold text-gray-500'>Employer Company Type : {resultdata.employer_company_type} </p>
@@ -52,3 +54,7 @@ const JobDetail = () => {
 }
 
 export default JobDetail;
+
+
+//add navigate(-1) back on div
+//propogation and bubbling - akshay saini
